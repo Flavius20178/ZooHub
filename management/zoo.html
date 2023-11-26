@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooHub</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function redirectToInfoPage(animalName){
+            window.location.href='info.html?name=' + animalName;
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="main.html" class="logo"> <i class="fas fa-paw"></i> ZooHub</a>
+
+        <nav class="navbar">
+            <a href="main.html">home</a>
+            <a href="main.html#about">about</a>
+            <a href="main.html#gallery">gallery</a>
+            <a href="main.html#animal">animals</a>
+            <a href="main.html#pricing">pricing</a>
+            <a href="main.html#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+    </header>
+
+
+    <!-- end -->
+
+<!-- animals -->
+
+<section class="animal" id="animal">
+
+    <h2 class="heading">animals</h2>
+    <div class="zoo">
+        <div class="box-container">
+            <div class="cols">
+                <div class="col" ontouchstart="this.classList.toggle('hover');" onclick="redirectToInfoPage('chameleon');">
+                    <div class="container">
+                    <div class="front" style="background-image: url(images/animal_1.jpg)">
+                        <div class="inner">
+                            <p>Chameleon</p>
+                            <span>Chamaeleonidae</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Exceptional vision and ability to change skin colour</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');" onclick="redirectToInfoPage('zebra');">
+                    <div class="container">
+                    <div class="front" style="background-image: url(images/animals_2.jpg)">
+                        <div class="inner">
+                            <p>Zebra</p>
+                            <span>Equus zebra, Equus quagga, Equus grevyi</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Stripe patterns are unique to each individual!</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');" onclick="redirectToInfoPage('giraffe');">
+                    <div class="container">
+                    <div class="front" style="background-image: url(images/animals_3.jpg)">
+                        <div class="inner">
+                            <p>Giraffe</p>
+                            <span>Giraffa camelopardalis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Long, black tongue can grow to 18 inches long!</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');" onclick="redirectToInfoPage('monkey');">
+                    <div class="container">
+                    <div class="front" style="background-image: url(images/animals_4.jpg)">
+                        <div class="inner">
+                            <p>Monkey</p>
+                            <span>Macaca Fascicularis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>There are around 260 known species!</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');" onclick="redirectToInfoPage('lion');">
+                    <div class="container">
+                        <div class="front" style="background-image: url(images/animals_5.jpg)">
+                            <div class="inner">
+                                <p>Lion</p>
+                                <span>Panthera leo melanochaitus</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>The male’s dark-colored mane</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/animals_4.jpg)">
+                        <div class="inner">
+                            <p>Monkey</p>
+                            <span>Macaca Fascicularis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>There are around 260 known species!</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/animals_4.jpg)">
+                        <div class="inner">
+                            <p>Monkey</p>
+                            <span>Macaca Fascicularis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>There are around 260 known species!</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/animals_4.jpg)">
+                        <div class="inner">
+                            <p>Monkey</p>
+                            <span>Macaca Fascicularis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>There are around 260 known species!</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/animals_4.jpg)">
+                        <div class="inner">
+                            <p>Monkey</p>
+                            <span>Macaca Fascicularis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>There are around 260 known species!</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/animals_4.jpg)">
+                        <div class="inner">
+                            <p>Monkey</p>
+                            <span>Macaca Fascicularis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>There are around 260 known species!</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/animals_4.jpg)">
+                        <div class="inner">
+                            <p>Monkey</p>
+                            <span>Macaca Fascicularis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>There are around 260 known species!</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(images/animals_4.jpg)">
+                        <div class="inner">
+                            <p>Monkey</p>
+                            <span>Macaca Fascicularis</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>There are around 260 known species!</p>
+                        </div>
+                    </div> -->
+                </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+
+<!-- end -->
+
+
+   
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3><i class="fas fa-paw"></i> ZooHub</h3>
+                <p>Where Wildlife Meets Wonder</p>
+                <p class="links"><i class="fas fa-clock"></i>monday - friday</p>
+                <p class="days">7:00AM - 11:00PM</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> +40-0712-345-678</a>
+                <a href="#" class="links"><i class="fas fa-phone"></i> +40-0712-345-678</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> info@zoohub.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Timisoara, Romania</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="main.html" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="main.html#about" class="links"> <i class="fas fa-arrow-right"></i>About</a>
+                <a href="main.html#gallery" class="links"> <i class="fas fa-arrow-right"></i>gallery</a>
+                <a href="main.html#animal" class="links"> <i class="fas fa-arrow-right"></i>Animals</a>
+                <a href="main.html#pricing" class="links"> <i class="fas fa-arrow-right"></i>Pricing</a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="Your Email" class="email">
+                <a href="#" class="btn">subscribe</a>
+                <div class="share">
+                    <a href="https://www.facebook.com/flavius.astratinei" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/Astra1Flavius" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/flav0.3/" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/flavius-astratinei-7948052a0/" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="credit">&copy; 2024 zoohub. All rights reserved by Astratinei Flavius</a></div>
+
+    </section>
+
+    <!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
