@@ -19,5 +19,5 @@ if (isset($_POST['submit'])) {
     else
         header('Location:register_visitor?msg=Updated Successfully');
 }
-$title = "Zoo - Visitor Registration";
+$title = "ZooHub - Visitor Registration";
 $content = loadTemplate('../templates/register_visitor_template.php', []);

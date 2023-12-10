@@ -1,6 +1,40 @@
 <?php
 $images2 = $images->fetchAll();
 ?>
+<?php
+
+function getAnimalInfoFromApi($speciesName) {
+    $apiKey = 'Z7eTAJ/s3zBIZ/O7e6yCJQ==Y70ecxJwFVIjjfJw';
+    $apiUrl = "https://api.api-ninjas.com/v1/animals?name=" . urlencode($speciesName);
+    
+    $apiResponse = file_get_contents($apiUrl, false, stream_context_create(['http' => ['header' => "Authorization: Bearer $apiKey"]]));
+
+    if ($apiResponse) {
+        $apiData = json_decode($apiResponse, true);
+
+        print_r($apiData);
+
+        $apiEntry = isset($apiData[0]) ? $apiData[0] : null;
+
+        if ($apiEntry) {
+
+            $naturalHabitat = implode(', ', $apiEntry['locations']);
+            
+            $averageLifespan = $apiEntry['characteristics']['lifespan'];
+
+            return [
+                'naturalHabitat' => $naturalHabitat,
+                'averageLifespan' => $averageLifespan,
+            ];
+        }
+    }
+
+    return [
+        'naturalHabitat' => 'Not available',
+        'averageLifespan' => 'Not available',
+    ];
+}
+?>
 <section class="bg-gray p-3">
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -40,10 +74,10 @@ $images2 = $images->fetchAll();
                             <h6 class="my-2"><span class="text-muted">Species name:</span>&ensp;<?= $animal['an_species_name'] ?></h6>
                             <h6 class="my-2"><span class="text-muted">Date of birth:</span>&ensp;<?= $animal['an_dob'] ?></h6>
                             <h6 class="my-2"><span class="text-muted">Gender:</span>&ensp;<?= $animal['an_gender'] == "m" ? "Male" : "Female" ?></h6>
-                            <h6 class="my-2"><span class="text-muted">Average Lifespan:</span>&ensp;<?= $animal['an_avg_lifespan'] ?></h6>
+                            <h6 class="my-2"><span class="text-muted">Average Lifespan:</span>&ensp;<?= $averageLifespan ?></h6>
                             <h6 class="my-2"><span class="text-muted">Location:</span>&ensp;<?= $getLocationName($animal['location_id']) ?></h6>
                             <h6 class="my-2"><span class="text-muted">Dietary Requirements:</span>&ensp;<?= $animal['an_dietary_req'] ?></h6>
-                            <h6 class="my-2"><span class="text-muted">Natural Habitat:</span>&ensp;<?= $animal['an_natural_habitat'] ?></h6>
+                            <h6 class="my-2"><span class="text-muted">Natural Habitat:</span>&ensp;<?= $naturalHabitat ?></h6>
                             <h6 class="my-2"><span class="text-muted">Population Distribution:</span>&ensp;<?= $animal['an_pop_dist'] ?></h6>
                             <h6 class="my-2"><span class="text-muted">Zoo join date:</span>&ensp;<?= $animal['an_joindate'] ?></h6>
                         </div>

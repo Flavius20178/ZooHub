@@ -21,5 +21,5 @@ if (isset($_POST['submit'])) {
         header('Location:register_sponsor?msg=Updated Successfully');
 }
 
-$title = "Zoo - Sponsor";
+$title = "Zoohub - Sponsor";
 $content = loadTemplate('../templates/register_sponsor_template.php', []);

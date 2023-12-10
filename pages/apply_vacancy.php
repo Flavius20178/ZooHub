@@ -20,5 +20,5 @@ if (isset($_POST['submit'])) {
 
 }
 
-$title = "Zoo - Apply for Vacancy";
+$title = "ZooHub - Apply for Vacancy";
 $content = loadTemplate('../templates/apply_vacancy_template.php', []);

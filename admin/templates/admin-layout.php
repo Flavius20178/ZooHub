@@ -369,7 +369,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>&copy; <?php echo date('Y')?> - Zoo Management System</span>
+            <span>&copy; <?php echo date('Y')?> - ZooHub</span>
           </div>
         </div>
       </footer>

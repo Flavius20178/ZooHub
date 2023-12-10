@@ -36,12 +36,15 @@ require_once '../classes/table.php';
 <body>
   <!-- navbar-->
   <header class="header">
-    <nav class="navbar navbar-expand-lg bg-header navbar-dark py-lg-0">
+    <nav class="navbar navbar-expand-lg bg-#ff6e01 navbar-light py-lg-0 ">
       <div class="container-fluid">
         <a href="home" class="navbar-brand font-weight-bold p-0">
           <div class="d-flex align-items-center">
+            <div style="font-size: 40px; margin-right: 50px;">
+              <i class="fas fa-paw"></i>
+            </div>
             <div>
-              <img src="../img/zoolg.png" width="135" style="border-radius: 100%" />
+              ZooHub
             </div>
             <div class="text-white ml-3">
               <!-- <span>The Canyon <b>Zoo</b></span> -->
@@ -95,8 +98,14 @@ require_once '../classes/table.php';
             <?php } ?>
             <?php if (!isset($_SESSION['authenticated'])) { ?>
               <li class="nav-item mt-4 mt-lg-0">
-                <a type="button" href="login" class="btn btn-outline-primary nav-btn btn-sm navbar-login-button text-white"> <i class="fas fa-sign-out-alt mr-2"></i>Login </a>
+                <a type="button" href="login" class="btn btn-outline-primary nav-btn btn-sm navbar-login-button text-black"> <i class="fas fa-sign-out-alt mr-2"></i>Login </a>
               </li>
+              <style>
+                .text-black {
+                  color: #000; /* or any other black color code you prefer */
+                }
+              </style>
+
             <?php } else { ?>
               <li class="nav-item dropdown pr-2">
                 <a class="nav-link dropdown-toggle font-weight-bold text-light" href="#a" data-toggle="dropdown">
@@ -121,48 +130,62 @@ require_once '../classes/table.php';
 
   <?php echo $content ?>
 
-  <footer style="background: #eee;" class="pt-5">
-    <!-- before, background was #eee  -->
+  <footer style="background: #258038 no-repeat center center; background-size: cover;" class="pt-5">
     <div class="container py-5">
       <div class="row">
         <div class="col-lg-8 col-md-6 mb-4">
-          <h5 class="lined lined-dark color-header mb-3 color-header">About Zoo Management System</h5>
-          <p class="text-muted text-small">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-          <p class="text-muted text-small">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+          <h5 class="lined lined-dark color-header mb-3 color-header">About ZooHub</h5>
+          <p class="text-small">From the gentle purring of a cat to the playful antics of a hamster or 
+                    the affectionate companionship of a loyal dog, small pets bring immeasurable joy to our lives. 
+                    These furry and feathered friends become our confidants, offering comfort, loyalty, and endless moments of happiness.</p>
+          <p class="text-small">They teach us about responsibility, empathy, and the unconditional love that transcends language. 
+                    When you stay with pets, you're not just sharing your home; you're sharing your heart with these charming creatures, 
+                    creating lasting bonds that enrich our lives in ways beyond measure.</p>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <h5 class="lined lined-dark mb-3 color-header">Our Location</h5>
-          <h6>Zoo Management System</h6>
-          <p class="text-muted mb-0 text-small">13/25 The Canyon Zoo</p>
-          <p class="text-muted mb-0 text-small">3485 Sardis Sta</p>
-          <p class="text-muted mb-4 text-small">Mobile + 22 444 333 4444 </p>
+          <h6 class="color-header">ZooHub</h6>
+          <p class="mb-0 text-small">Timisoara, Romania</p>
+          <p class="mb-0 text-small">Mobile +40-0712-345-678</p>
+          <p class="mb-4 text-small">Mobile +40-0712-345-678 </p>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <h5 class="lined lined-dark mb-3 color-header">Popular Animals</h5>
+          <h5 class="lined lined-dark mb-3 color-header">Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="footer-link text-small">Mammals</a></li>
-            <li><a href="#" class="footer-link text-small">Reptiles & Amphibians</a></li>
-            <li><a href="#" class="footer-link text-small">Birds</a></li>
-          </ul>
+            <li><a href="home" class="footer-link text-small">Home</a></li>
+            <li><a href="contact" class="footer-link text-small">Contact Us</a></li>
+            <li><a href="gallery" class="footer-link text-small">Gallery</a></li>
+            <li><a href="home" class="footer-link text-small">Animals</a></li>
+            <li><a href="ticket_page" class="footer-link text-small">Book Tickets</a></li>
+          </ul> 
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <h5 class="lined lined-dark mb-3 color-header">Connect with us</h5>
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="social-link facebook-logo"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link googleplus-logo"><i class="fab fa-google-plus-g"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link twitter-logo"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link mail-logo"><i class="fas fa-envelope"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/flavius.astratinei" class="social-link facebook-logo"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/flav0.3/" class="social-link googleplus-logo"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/Astra1Flavius" class="social-link twitter-logo"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/flavius-astratinei-7948052a0/" class="social-link mail-logo"><i class="fab fa-linkedin"></i></a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6">
           <h5 class="lined lined-dark mb-3 color-header">Contact Us</h5>
-          <p class="text-muted mb-4 text-small">You can contact us using the form in Contact Us page.
+          <p class="mb-4 text-small">You can contact us using the form in Contact Us page.
           </p>
         </div>
       </div>
     </div>
+    <style>
+            .color-header {
+                color: #ff6e01; /* Title color */
+            }
+
+            .text-small {
+                color: #fff; /* Text color */
+            }
+        </style>
     <div class="bg-header py-2 text-center text-white">
-      <p class="p-0 m-0">&copy; <?php echo date('Y')?> - Zoo Management System </p>
+      <p class="p-0 m-0">&copy; <?php echo date('Y')?> - ZooHub. All rights reserved by Astratinei Flavius </p>
     </div>
   </footer>
   <!-- JavaScript files-->

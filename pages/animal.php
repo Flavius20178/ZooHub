@@ -45,7 +45,7 @@ if ($sponsoredQ->rowCount() > 0) {
     $sponsorDetails = [];
 }
 
-$title = "Zoo - Animals";
+$title = "ZooHub - Animals";
 $content = loadTemplate('../templates/animal_template.php', [
     'animal' => $animal,
     'class' => $class,

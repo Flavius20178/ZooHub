@@ -13,5 +13,5 @@ if (isset($_POST['submit'])) {
     }
 }
 
-$title = "Zoo - Ticket";
+$title = "ZooHub - Ticket";
 $content = loadTemplate('../templates/ticket_page_template.php', []);

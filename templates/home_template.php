@@ -1,25 +1,30 @@
-<section style="background: url(../img/zoobg.jpg)" class="py-5 bg-cover bg-center">
+<section style="background: url(../img/banner2.jpg) no-repeat; background-size: cover; background-position: top center;" class="py-5 bg-cover bg-center">
     <div class="hero-overlay"></div>
     <div class="container py-5 px-0 text-white text-left">
-        <h1 class="text-shadow hero-heading font-weight-normal">Zoo Management System</h1>
-        <p class="text-shadow font-weight-light mt-3 mb-4" style="width: 40%">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Ipsum, non. Dolores atque debitis magnam ipsa explicabo assumenda aliquid quod at!
+        <h1 class="text-shadow hero-heading font-weight-normal">Welcome to ZooHub</h1>
+        <p class="text-shadow font-weight-light mt-3 mb-4" style="width: 40%;">
+            Enjoy the wonderful adventure of the animals
         </p>
     </div>
 </section>
-<!-- welcome to Zoo Management System -->
+
+<!-- welcome to ZooHub -->
 <section class="pb-2 pt-5">
     <div class="container-fluid p-5 pb-2">
         <div class="row px-2">
             <div class="col-lg-6 col-sm-12">
-                <h2>Welcome to <span class="font-weight-bold text-light-green">Zoo Management System</span></h2>
+                <h2>Welcome to <span class="font-weight-bold text-light-green">ZooHub</span></h2>
                 <div style="width: 8%">
 
                     <hr style="border-top: 10px solid #489A33;">
                 </div>
-                <p class="lead text-secondary">Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.</p>
-                <p class="text-small text-secondary">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+                <p class="lead text-secondary">In the vast world of nature, where diversity thrives, there's an exciting journey awaiting those who seek it. 
+                    From the depths of the oceans to the highest peaks of mountains, you can find all the most popular species, each with its unique charm. 
+                    Whether it's the majestic lions roaming the African savannah, the graceful dolphins dancing in the deep blue sea, 
+                    or the colorful birds adorning the skies, the beauty of Earth's inhabitants knows no bounds.</p>
+                <p class="text-secondary">Exploring and discovering these remarkable creatures is a 
+                    thrilling adventure that promises to inspire awe and wonder in every soul. 
+                    So, embark on this wondrous quest and unveil the secrets of the world's most beloved species.</p>
                 <a href="gallery" class="btn btn-primary btn-sm" style="border-radius: 50px;">View Gallery</a>
             </div>
             <div class="col-lg-6 col-sm-12 mt-sm-4">

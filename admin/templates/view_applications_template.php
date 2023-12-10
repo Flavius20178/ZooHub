@@ -66,8 +66,6 @@ $classes = [
                                                 <td><?= $app['a_phone'] ?></td>
                                                 <td><a href="../../files/cv/<?= $app['a_cv'] ?>" class="btn btn-secondary">Download</a></td>
                                                 <td><?= $getVacancyPosition($app['vacancy_id']) ?></td>
-                                                <!-- for other classes add here  -->
-                                                <!-- for other classes add here  -->
                                                 <?php if ($class['type'] == 'unreviewed') { ?>
                                                     <td>
                                                         <a href="archive?review_app_id=<?= $app['application_id'] ?>&app_vacancy_id=<?= $app['vacancy_id'] ?>&a_status=accepted" class="btn btn-success btn-sm d-inline-block"><i class="fas fa-check"></i> Accept</a>

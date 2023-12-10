@@ -1,7 +1,7 @@
 <section class="py-5 bg-cover bg-gray">
     <div class="container py-5">
         <h1 class="lined">Contact</h1>
-        <p class="lead my-4">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
+        <p class="lead my-4">Feel free to reach out to us with any questions, inquiries, or feedback. Our team is dedicated to providing you with the best assistance and information.</p>
     </div>
 </section>
 
@@ -13,22 +13,22 @@
                     <div class="col-lg-12 col-md-6 mb-4">
                         <div class="icon mb-4"><i class="pe-7s-map-2"></i></div>
                         <h5 class="lined mb-4">Address</h5>
-                        <p class="text-muted mb-0 text-small">13/25 The Canyon Zoo</p>
-                        <p class="text-muted mb-0 text-small">3485 Sardis Sta</p>
-                        <p class="text-muted mb-0 text-small">Dallas, <strong>TX </strong></p>
+                        <p class="text-muted mb-0 text-small">Bulevardul Vasile Pârvan 4</p>
+                        <p class="text-muted mb-0 text-small">Timișoara, <strong>TM </strong></p>
                     </div>
                     <div class="col-lg-12 col-md-6 mb-4">
                         <div class="icon mb-4"><i class="pe-7s-phone"></i></div>
                         <h5 class="lined mb-4">Call center</h5>
-                        <p class="text-muted mb-3 text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure reiciendis sapiente.</p>
-                        <p class="text-muted font-weight-bold">+11 222 333 44</p>
+                        <p class="text-muted mb-3 text-small">Please feel free to call us for extra information.</p>
+                        <p class="text-muted font-weight-bold">Mobile +40-0712-345-678</p>
+                        <p class="text-muted font-weight-bold">Mobile +40-0712-345-678</p>
                     </div>
                     <div class="col-lg-12 col-md-6 mb-4">
                         <div class="icon mb-4"><i class="pe-7s-mail-open"></i></div>
                         <h5 class="lined mb-4">Electronic support</h5>
                         <p class="text-muted mb-3 text-small">Please feel free to write an email to us or to use our electronic ticketing system.</p>
                         <ul>
-                            <li><a href="#" class="font-weight-bold text-small">info@codeastro.com</a></li>
+                            <li><a href="#" class="font-weight-bold text-small" style="color: black;">info@ZooHub.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,8 +44,8 @@
                         </button>
                          </div>';
                     } ?>
-                    <h5 class="lined mb-4">Contact form</h5>
-                    <p class="text-muted text-small">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
+                    <h5 class="lined mb-4">Contact Form</h5>
+                    <p class="text-muted text-small">Feel free to get in touch with us by using the contact form below. We value your feedback and inquiries.</p>
                     <form id="contact-form" method="post" action="" class="contact-form form">
                         <div class="row">
                             <div class="form-group col-lg-6">
@@ -87,10 +87,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429173.54259711574!2d-97.01174958554714!3d32.82092960729182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX%2C%20USA!5e0!3m2!1sen!2snp!4v1645276193375!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.2006510444903!2d21.22904027581714!3d45.747123214517785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d84610655bf%3A0xfd169ff24d29f192!2sUniversitatea%20de%20Vest%20din%20Timi%C8%99oara!5e0!3m2!1sro!2sro!4v1702229896602!5m2!1sro!2sro" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </div>
+
 <!-- <script src="vendor/lightbox2/js/lightbox.min.js"></script> -->
 <!-- <script src="vendor/leaflet/leaflet.js"></script> -->
 <!-- <script src="js/front.js"></script> -->

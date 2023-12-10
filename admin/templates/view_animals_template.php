@@ -91,8 +91,6 @@ $animals2 = $animals->fetchAll();
                                                 <td><?= $animal['an_weight'] ?></td>
                                                 <td><?= $animal['an_archived'] ?></td>
 
-                                                <!-- you can add more classification data here to show animals in tab  -->
-
                                                 <!-- for mammal -->
                                                 <?php if ($tableName == 'mammals') {
                                                     $mammal = $getMammalData($animal['animal_id']);
@@ -140,8 +138,6 @@ $animals2 = $animals->fetchAll();
                                                     <td><?= $amph['am_num_offspring'] ?></td>
                                                 <?php } ?>
 
-                                                <!-- for other classes add here  -->
-                                                <!-- for other classes add here  -->
                                                 <?php if ($_SESSION['role'] != "zookeeper") {  ?>
 
                                                     <?php if (!isset($_GET['archived'])) { ?>

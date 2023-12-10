@@ -6,5 +6,5 @@ if (isset($_POST['submit'])) {
     $testimonialTable->insertInDatabase($_POST);
     header('Location:post_testimonial?msg=Testimonial added successfully');
 }
-$title = "Zoo - Add Testimonial";
+$title = "ZooHub - Add Testimonial";
 $content = loadTemplate('../templates/post_testimonial_template.php', []);

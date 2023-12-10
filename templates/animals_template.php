@@ -18,7 +18,7 @@
                                     <div class="card-footer text-muted card-footer-address">
                                         <div class="d-flex justify-content-between">
                                             <span><?= $animal['an_gender'] == "m" ? "Male":"Female" ?></span>
-                                            <span>DOB <?= $animal['an_dob'] ?></span>
+                                            <span>Date of Birth <?= $animal['an_dob'] ?></span>
                                         </div>
                                     </div>
                                 </div>

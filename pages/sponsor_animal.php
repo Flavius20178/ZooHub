@@ -35,5 +35,5 @@ if (isset($_POST['submit'])) {
     header('Location:sponsor_animal?msg=Applied for sponsorship. Please wait until admin reviews your application');
 }
 
-$title = "Zoo - Sponsor";
+$title = "ZooHub - Sponsor";
 $content = loadTemplate('../templates/sponsor_animal_template.php', []);

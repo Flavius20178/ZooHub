@@ -31,7 +31,7 @@ $getSponsorName = function ($sponsorId) {
 $testimonials = $pdo->prepare("SELECT * FROM testimonials ORDER BY posted_date DESC LIMIT 3");
 $testimonials->execute();
 
-$title = "Zoo - Homepage";
+$title = "ZooHub - Homepage";
 $content = loadTemplate('../templates/home_template.php', [
     'currAnimal' => $currAnimal, 'getImageName' => $getImageName,
     'testimonials'=>$testimonials, 'getSponsorName' => $getSponsorName

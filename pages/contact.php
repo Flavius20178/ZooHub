@@ -6,5 +6,5 @@ if (isset($_POST['submit'])) {
     $feedbackTable->insertInDatabase($_POST);
     header('Location:contact?msg=Feedback sent successfully');
 }
-$title = "Zoo - Contact Us";
+$title = "ZooHub - Contact Us";
 $content = loadTemplate('../templates/contact_template.php', []);

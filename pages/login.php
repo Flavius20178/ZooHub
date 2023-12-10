@@ -56,5 +56,5 @@ if (isset($_POST['submit'])) {
       }
    }
 }
-$title = "Zoo - Login";
+$title = "ZooHub - Login";
 $content = loadTemplate('../templates/login_template.php', []);

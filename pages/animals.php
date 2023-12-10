@@ -25,7 +25,7 @@ $getImageName = function ($animalId) {
 };
 
 
-$title = "Zoo - Animals";
+$title = "ZooHub - Animals";
 $content = loadTemplate('../templates/animals_template.php', [
     'animals' => $animals,
     'getClassName'=>$getClassName,

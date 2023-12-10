@@ -2,5 +2,5 @@
 $eventsTable = new Table('events');
 $events = $eventsTable->findInDatabase('event_archived', 'false');
 
-$title = "Zoo - Events";
+$title = "ZooHub - Events";
 $content = loadTemplate('../templates/events_template.php', ['events' => $events]);
